@@ -4,343 +4,267 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manulife Quy Nhơn – Văn phòng tổng đại lý</title>
-  <meta name="description" content="Văn phòng tổng đại lý Manulife tại Quy Nhơn – Đồng hành bảo vệ, Tích lũy vững vàng, Kiến tạo tương lai. Tư vấn bảo hiểm nhân thọ, sức khỏe và tài chính.">
+  <meta name="description" content="Văn phòng tổng đại lý Manulife tại Quy Nhơn – Đồng hành bảo vệ, Tích lũy vững vàng, Kiến tạo tương lai.">
   <meta property="og:title" content="Manulife Quy Nhơn – Văn phòng tổng đại lý">
-  <meta property="og:description" content="Tư vấn và hỗ trợ các giải pháp bảo hiểm nhân thọ, sức khỏe và tài chính từ Manulife – tập đoàn tài chính hàng đầu thế giới.">
+  <meta property="og:description" content="Tư vấn và hỗ trợ các giải pháp bảo hiểm nhân thọ, sức khỏe và tài chính từ Manulife.">
   <meta property="og:type" content="website">
-
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    html, body { width: 100%; font-family: 'Inter', sans-serif; }
+    body { background: #f3f4f6; }
+    .gallery-scroll::-webkit-scrollbar { height: 4px; }
+    .gallery-scroll::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+    .gallery-scroll::-webkit-scrollbar-thumb { background: #16A34A; border-radius: 10px; }
+    .faq-content { display: none; }
+    .faq-content.open { display: block; }
+  </style>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            primary: '#1a5c38',
-            'primary-dark': '#134428',
-            'primary-light': '#2e7d52',
-            accent: '#00a758',
-            'accent-light': '#e8f5ef',
+            primary: '#16A34A',
+            'primary-light': '#22C55E',
+            'primary-dark': '#15803d',
           },
-          fontFamily: {
-            sans: ['Be Vietnam Pro', 'sans-serif'],
-          }
+          fontFamily: { sans: ['Inter', 'sans-serif'] }
         }
       }
     }
   </script>
-
-  <style>
-    * { font-family: 'Be Vietnam Pro', sans-serif; }
-    .gallery-scroll::-webkit-scrollbar { height: 4px; }
-    .gallery-scroll::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
-    .gallery-scroll::-webkit-scrollbar-thumb { background: #1a5c38; border-radius: 10px; }
-    .manulife-logo { font-weight: 800; font-size: 1.1rem; letter-spacing: -0.01em; }
-    .manulife-bars { display: inline-flex; gap: 3px; align-items: flex-end; margin-right: 6px; }
-    .manulife-bars span { display: block; width: 5px; background: currentColor; border-radius: 1px; }
-    .manulife-bars span:nth-child(1) { height: 10px; }
-    .manulife-bars span:nth-child(2) { height: 16px; }
-    .manulife-bars span:nth-child(3) { height: 12px; }
-    .trust-divider { width: 1px; height: 24px; background: #d1d5db; }
-    .stat-icon { width: 26px; height: 26px; flex-shrink: 0; }
-    .gallery-item { min-width: 260px; }
-    @media (min-width: 768px) { .gallery-item { min-width: 300px; } }
-    .faq-content { display: none; }
-    .faq-content.open { display: block; }
-    .hero-img-placeholder {
-      background: linear-gradient(135deg, #c8e6d7 0%, #a8d5bc 30%, #85c4a0 60%, #5aaa7f 100%);
-      position: relative;
-      overflow: hidden;
-    }
-    .hero-img-placeholder::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M0 0h60v60H0z' fill='none'/%3E%3Cpath d='M30 10c0 0-20 15-20 30s20 15 20 10V10z' fill='rgba(255,255,255,0.05)'/%3E%3C/svg%3E");
-    }
-    .building-placeholder {
-      background: linear-gradient(160deg, #b8d4c8 0%, #8ab5a0 50%, #5a9078 100%);
-    }
-  </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="font-sans">
 
-  <!-- ═══════════════════════════════════════════════
-       HERO SECTION
-  ═══════════════════════════════════════════════ -->
-  <section class="relative bg-white overflow-hidden min-h-[520px]">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-0 items-stretch min-h-[520px]">
+  <!-- ── HERO ── -->
+  <section class="bg-white px-5 pt-8 pb-6 md:px-8 border-b border-gray-100">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
 
-        <!-- Left: Content -->
-        <div class="py-12 lg:py-16 pr-0 lg:pr-8 flex flex-col justify-center">
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-primary leading-tight mb-1">
-            Manulife Quy Nhơn
+        <!-- Left: Text -->
+        <div>
+          <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-2">Văn phòng tổng đại lý</p>
+          <h1 class="text-3xl font-black text-gray-900 leading-tight mb-3">
+            Manulife<br><span class="text-primary">Quy Nhơn</span>
           </h1>
-          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-primary leading-tight mb-5">
-            Văn phòng tổng đại lý
-          </h2>
-          <p class="text-gray-700 font-semibold text-base sm:text-lg mb-3">
-            Đồng hành bảo vệ – Tích lũy vững vàng – Kiến tạo tương lai.
-          </p>
-          <p class="text-gray-600 text-base leading-relaxed mb-8 max-w-md">
-            Tư vấn và hỗ trợ các giải pháp bảo hiểm nhân thọ, sức khỏe
-            và tài chính từ Manulife – tập đoàn tài chính hàng đầu thế giới.
+          <p class="text-sm font-semibold text-gray-700 mb-1">Đồng hành bảo vệ – Tích lũy vững vàng – Kiến tạo tương lai.</p>
+          <p class="text-sm text-gray-500 leading-relaxed mb-6">
+            Tư vấn và hỗ trợ các giải pháp bảo hiểm nhân thọ, sức khỏe và tài chính từ Manulife – tập đoàn tài chính hàng đầu thế giới.
           </p>
 
-          <!-- CTA Buttons -->
-          <div class="flex flex-wrap gap-3 mb-10">
+          <div class="flex flex-wrap gap-3 mb-6">
             <a href="tel:0833431179"
-               class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-primary-dark transition-colors shadow-md">
+               class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-2xl font-bold text-sm tracking-widest uppercase shadow-lg shadow-primary/20 hover:bg-primary-light transition-all active:scale-95">
               <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
               </svg>
               Hotline: 08-3343-1179
             </a>
             <a href="https://zalo.me/0833431179" target="_blank"
-               class="inline-flex items-center gap-2 border-2 border-gray-400 text-gray-700 px-6 py-3 rounded-full font-semibold text-sm hover:border-primary hover:text-primary transition-colors">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-              </svg>
+               class="inline-flex items-center gap-2 border-2 border-gray-200 text-gray-700 px-6 py-3 rounded-2xl font-semibold text-sm hover:border-primary hover:text-primary transition-all">
               Chat Zalo
             </a>
           </div>
 
-          <!-- Trust Badges -->
-          <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-base text-gray-600">
-            <span class="flex items-center gap-2 whitespace-nowrap">
-              <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-1.5 text-xs text-gray-500 bg-gray-50 border border-gray-100 rounded-xl px-3 py-1.5">
+              <svg class="w-3.5 h-3.5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
               </svg>
               Uy tín toàn cầu
             </span>
-            <div class="trust-divider hidden sm:block"></div>
-            <span class="flex items-center gap-2 whitespace-nowrap">
-              <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span class="inline-flex items-center gap-1.5 text-xs text-gray-500 bg-gray-50 border border-gray-100 rounded-xl px-3 py-1.5">
+              <svg class="w-3.5 h-3.5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
               </svg>
               Tư vấn tận tâm
             </span>
-            <div class="trust-divider hidden sm:block"></div>
-            <span class="flex items-center gap-2 whitespace-nowrap">
-              <svg class="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            <span class="inline-flex items-center gap-1.5 text-xs text-gray-500 bg-gray-50 border border-gray-100 rounded-xl px-3 py-1.5">
+              <svg class="w-3.5 h-3.5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
               </svg>
               Đồng hành dài lâu
             </span>
           </div>
         </div>
 
-        <!-- Right: Photo + Address Card -->
-        <div class="relative hidden lg:block">
-          <!-- Office photo -->
-          <div class="absolute inset-0 ml-4 rounded-bl-3xl overflow-hidden">
-            <img src="images/Manulife%20Quy%20Nhon%20Office.png" alt="Văn phòng Manulife Quy Nhơn"
-                 class="w-full h-full object-cover object-top">
-            <!-- Overlay gradient for readability -->
-            <div class="absolute inset-0 bg-gradient-to-l from-transparent to-white/10"></div>
+        <!-- Right: Photo + address card -->
+        <div class="hidden md:block">
+          <div class="rounded-2xl overflow-hidden shadow-md border border-gray-100 h-64 relative">
+            <img src="images/Manulife%20Quy%20Nhon%20Office.png" alt="Văn phòng Manulife Quy Nhơn" class="w-full h-full object-cover object-top">
           </div>
-
-          <!-- Address Card -->
-          <div class="absolute bottom-8 right-4 bg-white rounded-2xl shadow-xl border border-gray-100" style="padding:20px; width:380px;">
-            <div class="flex items-center gap-3 mb-3">
-              <div class="w-9 h-9 bg-accent-light rounded-full flex items-center justify-center flex-shrink-0">
+          <div class="mt-3 bg-white rounded-2xl shadow-md border border-gray-100 p-4 flex items-center gap-4">
+            <div class="flex items-center gap-3 flex-1">
+              <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
                 </svg>
               </div>
               <div>
-                <p class="text-sm text-gray-500 font-medium leading-none mb-1">Địa chỉ văn phòng</p>
-                <p class="text-sm font-semibold text-gray-800 leading-snug">19 Phạm Tu, Quy Nhơn Đông, Gia Lai</p>
+                <p class="text-xs text-gray-400 mb-0.5">Địa chỉ</p>
+                <p class="text-xs font-semibold text-gray-800">19 Phạm Tu, Quy Nhơn Đông, Gia Lai</p>
               </div>
             </div>
-            <div class="border-t border-gray-100 pt-3 flex items-center gap-3">
-              <div class="w-9 h-9 bg-accent-light rounded-full flex items-center justify-center flex-shrink-0">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center flex-shrink-0">
                 <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
                 </svg>
               </div>
               <div>
-                <p class="text-sm text-gray-500 font-medium mb-0.5">Hotline</p>
-                <p class="text-base font-bold text-primary">08-3343-1179</p>
+                <p class="text-xs text-gray-400 mb-0.5">Hotline</p>
+                <p class="text-sm font-bold text-primary">08-3343-1179</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Mobile address info -->
-    <div class="lg:hidden bg-accent-light mx-4 mb-6 rounded-xl p-4">
-      <div class="flex items-center gap-3 mb-2">
-        <svg class="w-4 h-4 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
-        </svg>
-        <p class="text-sm text-gray-700">19 Phạm Tu, Quy Nhơn Đông, Gia Lai</p>
       </div>
-      <div class="flex items-center gap-3">
-        <svg class="w-4 h-4 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-        </svg>
-        <p class="text-sm font-bold text-primary">08-3343-1179</p>
+
+      <!-- Mobile address -->
+      <div class="md:hidden mt-5 bg-gray-50 rounded-2xl border border-gray-100 p-4 flex items-center gap-4">
+        <div class="flex items-center gap-2.5 flex-1 min-w-0">
+          <div class="w-8 h-8 bg-white rounded-xl flex items-center justify-center border border-gray-100 flex-shrink-0">
+            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <p class="text-xs text-gray-600 truncate">19 Phạm Tu, Quy Nhơn Đông, Gia Lai</p>
+        </div>
+        <div class="flex items-center gap-2.5 flex-shrink-0">
+          <div class="w-8 h-8 bg-white rounded-xl flex items-center justify-center border border-gray-100">
+            <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+            </svg>
+          </div>
+          <p class="text-xs font-bold text-primary">08-3343-1179</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════
-       SERVICES SECTION
-  ═══════════════════════════════════════════════ -->
-  <section class="py-14 bg-white border-t border-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-bold text-gray-800 mb-10">Bạn đang cần hỗ trợ gì?</h2>
+  <!-- ── SERVICES ── -->
+  <section class="py-8 px-5 md:px-8">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-base font-bold text-gray-900 mb-5">Bạn đang cần hỗ trợ gì?</h2>
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-3">
 
-      <div class="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
-
-        <!-- Service 1 -->
-        <div class="flex flex-col items-center text-center group cursor-pointer">
-          <div class="w-16 h-16 bg-gray-50 border border-gray-200 rounded-2xl flex items-center justify-center mb-3 group-hover:border-primary group-hover:bg-accent-light transition-all">
-            <svg class="w-8 h-8 text-gray-500 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white border border-gray-100 rounded-2xl p-3 flex flex-col items-center text-center shadow-sm hover:border-primary/30 hover:shadow-md transition-all cursor-pointer group">
+          <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-2.5 group-hover:bg-green-50 transition-colors">
+            <svg class="w-5 h-5 text-gray-500 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
             </svg>
           </div>
-          <p class="text-sm text-gray-700 font-medium leading-snug">Tìm hiểu & tư vấn bảo hiểm</p>
+          <p class="text-xs text-gray-600 font-medium leading-snug">Tìm hiểu & tư vấn</p>
         </div>
 
-        <!-- Service 2 -->
-        <div class="flex flex-col items-center text-center group cursor-pointer">
-          <div class="w-16 h-16 bg-gray-50 border border-gray-200 rounded-2xl flex items-center justify-center mb-3 group-hover:border-primary group-hover:bg-accent-light transition-all">
-            <svg class="w-8 h-8 text-gray-500 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white border border-gray-100 rounded-2xl p-3 flex flex-col items-center text-center shadow-sm hover:border-primary/30 hover:shadow-md transition-all cursor-pointer group">
+          <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-2.5 group-hover:bg-green-50 transition-colors">
+            <svg class="w-5 h-5 text-gray-500 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
             </svg>
           </div>
-          <p class="text-sm text-gray-700 font-medium leading-snug">Bảo vệ sức khỏe gia đình</p>
+          <p class="text-xs text-gray-600 font-medium leading-snug">Bảo vệ sức khỏe</p>
         </div>
 
-        <!-- Service 3 -->
-        <div class="flex flex-col items-center text-center group cursor-pointer">
-          <div class="w-16 h-16 bg-gray-50 border border-gray-200 rounded-2xl flex items-center justify-center mb-3 group-hover:border-primary group-hover:bg-accent-light transition-all">
-            <svg class="w-8 h-8 text-gray-500 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white border border-gray-100 rounded-2xl p-3 flex flex-col items-center text-center shadow-sm hover:border-primary/30 hover:shadow-md transition-all cursor-pointer group">
+          <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-2.5 group-hover:bg-green-50 transition-colors">
+            <svg class="w-5 h-5 text-gray-500 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
             </svg>
           </div>
-          <p class="text-sm text-gray-700 font-medium leading-snug">Kiểm tra hợp đồng / quyền lợi</p>
+          <p class="text-xs text-gray-600 font-medium leading-snug">Kiểm tra hợp đồng</p>
         </div>
 
-        <!-- Service 4 -->
-        <div class="flex flex-col items-center text-center group cursor-pointer">
-          <div class="w-16 h-16 bg-gray-50 border border-gray-200 rounded-2xl flex items-center justify-center mb-3 group-hover:border-primary group-hover:bg-accent-light transition-all">
-            <svg class="w-8 h-8 text-gray-500 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white border border-gray-100 rounded-2xl p-3 flex flex-col items-center text-center shadow-sm hover:border-primary/30 hover:shadow-md transition-all cursor-pointer group">
+          <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-2.5 group-hover:bg-green-50 transition-colors">
+            <svg class="w-5 h-5 text-gray-500 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
             </svg>
           </div>
-          <p class="text-sm text-gray-700 font-medium leading-snug">Đóng phí bảo hiểm</p>
+          <p class="text-xs text-gray-600 font-medium leading-snug">Đóng phí bảo hiểm</p>
         </div>
 
-        <!-- Service 5 -->
-        <div class="flex flex-col items-center text-center group cursor-pointer">
-          <div class="w-16 h-16 bg-gray-50 border border-gray-200 rounded-2xl flex items-center justify-center mb-3 group-hover:border-primary group-hover:bg-accent-light transition-all">
-            <svg class="w-8 h-8 text-gray-500 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white border border-gray-100 rounded-2xl p-3 flex flex-col items-center text-center shadow-sm hover:border-primary/30 hover:shadow-md transition-all cursor-pointer group">
+          <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-2.5 group-hover:bg-green-50 transition-colors">
+            <svg class="w-5 h-5 text-gray-500 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
           </div>
-          <p class="text-sm text-gray-700 font-medium leading-snug">Tích lũy & đầu tư</p>
+          <p class="text-xs text-gray-600 font-medium leading-snug">Tích lũy & đầu tư</p>
         </div>
 
-        <!-- Service 6 -->
-        <div class="flex flex-col items-center text-center group cursor-pointer">
-          <div class="w-16 h-16 bg-gray-50 border border-gray-200 rounded-2xl flex items-center justify-center mb-3 group-hover:border-primary group-hover:bg-accent-light transition-all">
-            <svg class="w-8 h-8 text-gray-500 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white border border-gray-100 rounded-2xl p-3 flex flex-col items-center text-center shadow-sm hover:border-primary/30 hover:shadow-md transition-all cursor-pointer group">
+          <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-2.5 group-hover:bg-green-50 transition-colors">
+            <svg class="w-5 h-5 text-gray-500 group-hover:text-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
           </div>
-          <p class="text-sm text-gray-700 font-medium leading-snug">Cơ hội nghề nghiệp cùng Manulife</p>
+          <p class="text-xs text-gray-600 font-medium leading-snug">Cơ hội nghề nghiệp</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════
-       ACTIVITIES GALLERY
-  ═══════════════════════════════════════════════ -->
-  <section class="py-14 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold text-gray-800 mb-8">
+  <!-- ── GALLERY ── -->
+  <section class="py-8 px-5 md:px-8 bg-white border-t border-gray-100">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-base font-bold text-gray-900 mb-5">
         Hoạt động tại <span class="text-primary">Manulife Quy Nhơn</span>
       </h2>
 
-      <!-- Gallery wrapper with nav buttons -->
       <div class="relative">
-        <!-- Left arrow -->
         <button onclick="scrollGallery(-1)"
-                class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-white shadow-lg rounded-full flex items-center justify-center text-gray-600 hover:text-primary hover:shadow-xl transition-all hidden md:flex">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 z-10 w-9 h-9 bg-white shadow-md border border-gray-100 rounded-2xl flex items-center justify-center text-gray-500 hover:text-primary hover:border-primary/30 transition-all hidden md:flex">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
           </svg>
         </button>
 
-        <!-- Scrollable gallery -->
-        <div id="gallery" class="gallery-scroll flex gap-4 overflow-x-auto pb-4 scroll-smooth" style="scroll-behavior: smooth;">
+        <div id="gallery" class="gallery-scroll flex gap-3 overflow-x-auto pb-2" style="scroll-behavior: smooth;">
 
-          <!-- Gallery Item 1 -->
-          <div class="gallery-item flex-shrink-0">
-            <div class="h-48 rounded-xl overflow-hidden relative">
-              <img src="images/phong-dao-tao-manulife-quy-nhon.png" alt="Phòng đào tạo Manulife Quy Nhơn"
-                   class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          <div class="flex-shrink-0" style="min-width:240px;">
+            <div class="h-44 rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+              <img src="images/phong-dao-tao-manulife-quy-nhon.png" alt="Phòng đào tạo Manulife Quy Nhơn" class="w-full h-full object-cover">
             </div>
-            <p class="text-sm text-gray-700 font-medium mt-2 px-1">Đào tạo tư vấn viên chuyên nghiệp</p>
+            <p class="text-xs text-gray-600 font-medium mt-2 px-1">Đào tạo tư vấn viên chuyên nghiệp</p>
           </div>
 
-          <!-- Gallery Item 2 -->
-          <div class="gallery-item flex-shrink-0">
-            <div class="h-48 rounded-xl overflow-hidden relative">
-              <img src="images/hoi-thao-khach-hang-manulife-quy-nhon.png" alt="Hội thảo khách hàng Manulife Quy Nhơn"
-                   class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          <div class="flex-shrink-0" style="min-width:240px;">
+            <div class="h-44 rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+              <img src="images/hoi-thao-khach-hang-manulife-quy-nhon.png" alt="Hội thảo khách hàng" class="w-full h-full object-cover">
             </div>
-            <p class="text-sm text-gray-700 font-medium mt-2 px-1">Hội thảo khách hàng định kỳ</p>
+            <p class="text-xs text-gray-600 font-medium mt-2 px-1">Hội thảo khách hàng định kỳ</p>
           </div>
 
-          <!-- Gallery Item 3 -->
-          <div class="gallery-item flex-shrink-0">
-            <div class="h-48 rounded-xl overflow-hidden relative">
-              <img src="images/manulife-quy-nhon-hop-tac.png" alt="Manulife Quy Nhơn hợp tác"
-                   class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          <div class="flex-shrink-0" style="min-width:240px;">
+            <div class="h-44 rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+              <img src="images/manulife-quy-nhon-hop-tac.png" alt="Manulife Quy Nhơn hợp tác" class="w-full h-full object-cover">
             </div>
-            <p class="text-sm text-gray-700 font-medium mt-2 px-1">Hoạt động cộng đồng ý nghĩa</p>
+            <p class="text-xs text-gray-600 font-medium mt-2 px-1">Hoạt động cộng đồng ý nghĩa</p>
           </div>
 
-          <!-- Gallery Item 4 -->
-          <div class="gallery-item flex-shrink-0">
-            <div class="h-48 rounded-xl overflow-hidden relative">
-              <img src="images/manulife-quy-nhon-lanh-dao.png" alt="Lãnh đạo Manulife Quy Nhơn"
-                   class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          <div class="flex-shrink-0" style="min-width:240px;">
+            <div class="h-44 rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+              <img src="images/manulife-quy-nhon-lanh-dao.png" alt="Lãnh đạo Manulife Quy Nhơn" class="w-full h-full object-cover">
             </div>
-            <p class="text-sm text-gray-700 font-medium mt-2 px-1">Lãnh đạo Manulife Quy Nhơn – Gia Lai</p>
+            <p class="text-xs text-gray-600 font-medium mt-2 px-1">Lãnh đạo Manulife Quy Nhơn – Gia Lai</p>
           </div>
 
-          <!-- Gallery Item 5 -->
-          <div class="gallery-item flex-shrink-0">
-            <div class="h-48 rounded-xl overflow-hidden relative">
-              <img src="images/manulife-quy-nhon-tin-vinh.png" alt="Manulife Quy Nhơn tôn vinh tư vấn viên"
-                   class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          <div class="flex-shrink-0" style="min-width:240px;">
+            <div class="h-44 rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+              <img src="images/manulife-quy-nhon-tin-vinh.png" alt="Tôn vinh tư vấn viên" class="w-full h-full object-cover">
             </div>
-            <p class="text-sm text-gray-700 font-medium mt-2 px-1">Tôn vinh tư vấn viên xuất sắc</p>
+            <p class="text-xs text-gray-600 font-medium mt-2 px-1">Tôn vinh tư vấn viên xuất sắc</p>
           </div>
 
         </div>
 
-        <!-- Right arrow -->
         <button onclick="scrollGallery(1)"
-                class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-white shadow-lg rounded-full flex items-center justify-center text-gray-600 hover:text-primary hover:shadow-xl transition-all hidden md:flex">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 z-10 w-9 h-9 bg-white shadow-md border border-gray-100 rounded-2xl flex items-center justify-center text-gray-500 hover:text-primary hover:border-primary/30 transition-all hidden md:flex">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
           </svg>
         </button>
@@ -348,258 +272,156 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════
-       WHY CHOOSE + SERVICE AREAS
-  ═══════════════════════════════════════════════ -->
-  <section class="py-14 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-12">
+  <!-- ── VIDEO + SERVICE AREAS ── -->
+  <section class="py-8 px-5 md:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-6">
 
-        <!-- Left: Why Choose -->
+        <!-- Left: Video -->
         <div>
-          <h2 class="text-xl sm:text-2xl font-bold text-primary mb-6">Vì sao chọn Manulife tại Quy Nhơn?</h2>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3">
-              <div class="w-7 h-7 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-              </div>
-              <p class="text-gray-700 text-base">Sản phẩm đa dạng, phù hợp mọi giai đoạn cuộc sống</p>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="w-7 h-7 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-              </div>
-              <p class="text-gray-700 text-base">Bảo vệ toàn diện: bệnh hiểm nghèo, tai nạn, thu nhập, giáo dục...</p>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="w-7 h-7 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-              </div>
-              <p class="text-gray-700 text-base">Quyền lợi minh bạch, chi trả nhanh chóng</p>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="w-7 h-7 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-              </div>
-              <p class="text-gray-700 text-base">Tư vấn chuyên nghiệp, đồng hành dài lâu</p>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="w-7 h-7 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-              </div>
-              <p class="text-gray-700 text-base">Dịch vụ chăm sóc khách hàng tận tâm tại địa phương</p>
-            </li>
-          </ul>
+          <h2 class="text-base font-bold text-gray-900 mb-4">Manulife Quy Nhơn – Nhìn từ bên trong</h2>
+          <div class="relative w-full rounded-2xl overflow-hidden shadow-md border border-gray-100" style="padding-bottom:56.25%;">
+            <iframe
+              src="https://www.youtube.com/embed/c49RsydSfhI?autoplay=1&mute=1&rel=0&playsinline=1"
+              title="Manulife Quy Nhơn"
+              class="absolute inset-0 w-full h-full"
+              frameborder="0"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p class="text-xs text-gray-400 mt-2 px-1">Video tự phát khi tải trang – nhấn để xem toàn màn hình.</p>
         </div>
 
-        <!-- Right: Service Areas -->
-        <div>
-          <h2 class="text-xl sm:text-2xl font-bold text-gray-800 mb-4">Manulife tại Quy Nhơn – Gia Lai</h2>
-          <p class="text-gray-600 text-base leading-relaxed mb-5">
-            Chúng tôi tự hào là văn phòng tổng đại lý chính thức của Manulife,
-            phục vụ khách hàng tại Quy Nhơn và các khu vực lân cận.
-          </p>
-          <ul class="space-y-4">
-            <li class="flex items-start gap-3">
-              <div class="w-7 h-7 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
+        <!-- Right: Service areas -->
+        <div class="flex flex-col gap-5">
+          <div>
+            <h2 class="text-base font-bold text-gray-900 mb-3">Khu vực phục vụ</h2>
+            <p class="text-sm text-gray-500 leading-relaxed mb-4">
+              VP Tổng đại lý Manulife Quy Nhơn hỗ trợ và phục vụ khách hàng Manulife trên <strong class="text-gray-700">toàn quốc</strong>. Tuy nhiên sự ra đời của văn phòng tại Quy Nhơn giúp các khách hàng đang sinh sống, làm việc tại <strong class="text-gray-700">Bình Định</strong> và các tỉnh thành lân cận được hỗ trợ nhanh hơn khi cần.
+            </p>
+            <div class="space-y-2.5">
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <p class="text-sm text-gray-600">Quy Nhơn, An Nhơn, Phù Cát, Tuy Phước, Phù Mỹ</p>
               </div>
-              <p class="text-gray-700 text-base">Quy Nhơn, An Nhơn, Phù Cát, Tuy Phước, Phù Mỹ</p>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="w-7 h-7 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <p class="text-sm text-gray-600">Hoài Nhơn, Tây Sơn, Văn Canh, Vĩnh Thạnh</p>
               </div>
-              <p class="text-gray-700 text-base">Hoài Nhơn, Tây Sơn, Văn Canh, Vĩnh Thạnh</p>
-            </li>
-            <li class="flex items-start gap-3">
-              <div class="w-7 h-7 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
+              <div class="flex items-start gap-3">
+                <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg class="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <p class="text-sm text-gray-600 font-semibold">Hỗ trợ tận nơi – nhanh chóng – thuận tiện</p>
               </div>
-              <p class="text-gray-700 text-base font-semibold">Hỗ trợ tận nơi – nhanh chóng – thuận tiện</p>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════
-       BRAND TRUST SECTION
-  ═══════════════════════════════════════════════ -->
-  <section class="py-14 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-bold text-gray-800 mb-10">Manulife – Thương hiệu toàn cầu, uy tín vượt trội</h2>
+  <!-- ── BRAND TRUST ── -->
+  <section class="py-8 px-5 md:px-8 bg-white border-t border-gray-100">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-base font-bold text-gray-900 mb-5">Manulife – Thương hiệu toàn cầu, uy tín vượt trội</h2>
+      <div class="grid md:grid-cols-2 gap-4">
 
-      <div class="grid lg:grid-cols-2 gap-8">
-
-        <!-- Manulife Global -->
-        <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
-          <!-- Logo -->
-          <div class="flex items-center gap-2 mb-6">
-            <div class="manulife-bars text-primary">
-              <span></span><span></span><span></span>
+        <!-- Global -->
+        <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-5">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+              </svg>
             </div>
             <div>
-              <div class="manulife-logo text-gray-800">Manulife</div>
-              <div class="text-xs text-gray-400 font-medium tracking-wide">Toàn cầu</div>
+              <p class="text-sm font-bold text-gray-900">Manulife Toàn Cầu</p>
+              <p class="text-xs text-gray-400">Tập đoàn tài chính hàng đầu</p>
             </div>
           </div>
-
-          <div class="space-y-4">
-            <div class="flex items-start gap-3">
-              <div class="stat-icon bg-accent-light rounded-lg flex items-center justify-center flex-shrink-0">
-                <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
-                </svg>
+          <p class="text-sm text-gray-500 leading-relaxed mb-4">
+            Là một tập đoàn dịch vụ tài chính toàn cầu hàng đầu, được ghi nhận là một trong <strong class="text-gray-700">10 công ty bảo hiểm nhân thọ hàng đầu thế giới</strong> xét theo giá trị vốn hóa thị trường.
+          </p>
+          <div class="space-y-3.5">
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               </div>
-              <div>
-                <p class="text-sm text-gray-500">Có mặt tại</p>
-                <p class="text-base font-semibold text-gray-800">23+ quốc gia và vùng lãnh thổ</p>
-              </div>
+              <div><p class="text-xs text-gray-400">Phục vụ hơn</p><p class="text-sm font-semibold text-gray-800">37 triệu khách hàng toàn thế giới</p></div>
             </div>
-            <div class="flex items-start gap-3">
-              <div class="stat-icon bg-accent-light rounded-lg flex items-center justify-center flex-shrink-0">
-                <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
-                </svg>
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               </div>
-              <div>
-                <p class="text-sm text-gray-500">Phục vụ hơn</p>
-                <p class="text-base font-semibold text-gray-800">34 triệu khách hàng</p>
-              </div>
+              <div><p class="text-xs text-gray-400">Đội ngũ</p><p class="text-sm font-semibold text-gray-800">37.000 nhân viên & 106.000+ đại lý</p></div>
             </div>
-            <div class="flex items-start gap-3">
-              <div class="stat-icon bg-accent-light rounded-lg flex items-center justify-center flex-shrink-0">
-                <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                </svg>
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
               </div>
-              <div>
-                <p class="text-sm text-gray-500">Quản lý hơn</p>
-                <p class="text-base font-semibold text-gray-800">1,1 nghìn tỷ USD <span class="text-gray-500 font-normal">(tài sản quản lý)</span></p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <div class="stat-icon bg-accent-light rounded-lg flex items-center justify-center flex-shrink-0">
-                <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-              </div>
-              <div>
-                <p class="text-sm text-gray-500">Hơn</p>
-                <p class="text-base font-semibold text-gray-800">135 năm kinh nghiệm <span class="text-gray-500 font-normal">trong lĩnh vực tài chính</span></p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <div class="stat-icon bg-accent-light rounded-lg flex items-center justify-center flex-shrink-0">
-                <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
-                </svg>
-              </div>
-              <div>
-                <p class="text-sm text-gray-500">Xếp hạng tín nhiệm (S&P)</p>
-                <p class="text-base font-semibold text-gray-800">Mức đánh giá rất mạnh</p>
-              </div>
+              <div><p class="text-xs text-gray-400">Nền tảng vững chắc</p><p class="text-sm font-semibold text-gray-800">Mạng lưới toàn cầu, quy mô hoạt động lớn</p></div>
             </div>
           </div>
         </div>
 
-        <!-- Manulife Vietnam -->
-        <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
-          <div class="flex items-start justify-between gap-4">
-            <div class="flex-1">
-              <!-- Logo -->
-              <div class="flex items-center gap-2 mb-6">
-                <div class="manulife-bars text-primary">
-                  <span></span><span></span><span></span>
-                </div>
-                <div>
-                  <div class="manulife-logo text-gray-800">Manulife</div>
-                  <div class="text-xs text-gray-400 font-medium tracking-wide">Việt Nam</div>
-                </div>
+        <!-- Vietnam -->
+        <div class="bg-white rounded-2xl shadow-md border border-gray-100 p-5">
+          <div class="flex items-start justify-between gap-3 mb-5">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>
+                </svg>
               </div>
-
-              <div class="space-y-4">
-                <div class="flex items-start gap-3">
-                  <div class="stat-icon bg-accent-light rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="text-sm text-gray-500">Có mặt tại Việt Nam từ</p>
-                    <p class="text-base font-semibold text-gray-800">1999</p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-3">
-                  <div class="stat-icon bg-accent-light rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="text-sm text-gray-500">Vị thế</p>
-                    <p class="text-base font-semibold text-gray-800">Top đầu thị trường bảo hiểm nhân thọ</p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-3">
-                  <div class="stat-icon bg-accent-light rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="text-sm text-gray-500">Hơn</p>
-                    <p class="text-base font-semibold text-gray-800">1,7 triệu khách hàng</p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-3">
-                  <div class="stat-icon bg-accent-light rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="text-sm text-gray-500">Mạng lưới rộng khắp</p>
-                    <p class="text-base font-semibold text-gray-800">63 tỉnh thành</p>
-                  </div>
-                </div>
-                <div class="flex items-start gap-3">
-                  <div class="stat-icon bg-accent-light rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg class="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <p class="text-sm text-gray-500">Cam kết</p>
-                    <p class="text-base font-semibold text-gray-800">Mạnh mẽ với cộng đồng và phát triển bền vững</p>
-                  </div>
-                </div>
+              <div>
+                <p class="text-sm font-bold text-gray-900">Manulife Việt Nam</p>
+                <p class="text-xs text-gray-400">Hoạt động từ 1999</p>
               </div>
             </div>
-
-            <!-- Building Image -->
-            <div class="hidden sm:block w-36 h-52 rounded-xl overflow-hidden flex-shrink-0">
-              <img src="images/tru%20so%20chinh%20Manulife%20Viet%20Nam.webp" alt="Trụ sở chính Manulife Việt Nam"
-                   class="w-full h-full object-cover object-top">
+            <div class="hidden sm:block w-20 h-28 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
+              <img src="images/tru%20so%20chinh%20Manulife%20Viet%20Nam.webp" alt="Trụ sở Manulife Việt Nam" class="w-full h-full object-cover object-top">
+            </div>
+          </div>
+          <p class="text-sm text-gray-500 leading-relaxed mb-4">
+            Là doanh nghiệp BHNT có <strong class="text-gray-700">100% vốn nước ngoài đầu tiên tại Việt Nam</strong> và có tổng vốn điều lệ cao nhất trên thị trường bảo hiểm. Với sứ mệnh đồng hành cùng khách hàng để đưa ra các giải pháp bảo vệ sức khỏe & tài chính ưu việt.
+          </p>
+          <div class="space-y-3.5">
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <div><p class="text-xs text-gray-400">Mạng lưới</p><p class="text-sm font-semibold text-gray-800">50+ văn phòng, 1.000+ nhân viên</p></div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <div><p class="text-xs text-gray-400">Đội ngũ</p><p class="text-sm font-semibold text-gray-800">50.000+ tư vấn viên trên toàn quốc</p></div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <div><p class="text-xs text-gray-400">Phục vụ gần</p><p class="text-sm font-semibold text-gray-800">1,2 triệu khách hàng</p></div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <div><p class="text-xs text-gray-400">Tiên phong</p><p class="text-sm font-semibold text-gray-800">Đổi mới công nghệ & chuyển đổi số</p></div>
             </div>
           </div>
         </div>
@@ -608,135 +430,210 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════
-       FAQ + INSURANCE PRODUCTS
-  ═══════════════════════════════════════════════ -->
-  <section class="py-14 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-12">
+  <!-- ── RECRUITMENT ── -->
+  <section class="py-10 px-5 md:px-8 bg-white border-t border-gray-100">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
 
-        <!-- Left: FAQ -->
+        <!-- Left: Content -->
         <div>
-          <h2 class="text-2xl font-bold text-gray-800 mb-8">Câu hỏi thường gặp</h2>
+          <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-2">Khoá học chứng chỉ đại lý</p>
+          <h2 class="text-2xl font-black text-gray-900 leading-tight mb-3">
+            Lời mời tham dự Khoá học<br><span class="text-primary">Chứng chỉ Đại lý BHNT</span>
+          </h2>
+          <p class="text-sm text-gray-500 leading-relaxed mb-2">
+            Do <strong class="text-gray-700">Bộ Tài Chính tổ chức</strong> — dành cho bất kỳ ai muốn hiểu đúng về bảo hiểm nhân thọ, bất kể có ý định hành nghề hay không.
+          </p>
 
-          <div class="space-y-3" id="faq-list">
+          <!-- 3 value props -->
+          <div class="space-y-3 mb-6 mt-5">
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-gray-800">Hiểu đúng để bảo vệ gia đình</p>
+                <p class="text-xs text-gray-500 mt-0.5">Nắm rõ quyền lợi, điều khoản và cách đọc hợp đồng bảo hiểm</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-gray-800">Giúp người khác sống an tâm hơn</p>
+                <p class="text-xs text-gray-500 mt-0.5">Chia sẻ kiến thức bảo hiểm với người thân, bạn bè, cộng đồng</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-5 h-5 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                <svg class="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              </div>
+              <div>
+                <p class="text-sm font-semibold text-gray-800">Và khám phá thêm cơ hội gia tăng thu nhập</p>
+                <p class="text-xs text-gray-500 mt-0.5">Chứng chỉ hành nghề đại lý BHNT do Bộ Tài Chính cấp, có giá trị lâu dài</p>
+              </div>
+            </div>
+          </div>
 
-            <!-- FAQ 1 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden">
-              <button class="faq-btn w-full text-left px-5 py-4 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
-                <span class="text-base font-medium text-gray-800 pr-4">Bảo hiểm Manulife có những sản phẩm nào?</span>
-                <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <a href="https://mit.trambaohiem.com" target="_blank"
+             class="inline-flex items-center gap-2 bg-primary text-white font-bold px-7 py-4 rounded-2xl text-sm tracking-widest uppercase shadow-lg shadow-primary/20 hover:bg-primary-light transition-all active:scale-95">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
+            Tìm hiểu & Đăng ký ngay
+          </a>
+        </div>
+
+        <!-- Right: Info card -->
+        <div class="bg-gray-50 rounded-2xl border border-gray-100 p-6">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-10 h-10 bg-white rounded-xl shadow-sm border border-gray-100 flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="text-sm font-bold text-gray-900">Chứng chỉ Đại lý BHNT</p>
+              <p class="text-xs text-gray-400">Được cấp bởi Bộ Tài Chính Việt Nam</p>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div class="bg-white rounded-xl border border-gray-100 p-3.5">
+              <p class="text-xs text-gray-400 mb-0.5">Đối tượng</p>
+              <p class="text-sm font-semibold text-gray-800">Ai cũng có thể tham gia – không yêu cầu kinh nghiệm</p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-100 p-3.5">
+              <p class="text-xs text-gray-400 mb-0.5">Chứng chỉ</p>
+              <p class="text-sm font-semibold text-gray-800">Chứng chỉ hành nghề đại lý BHNT – giá trị toàn quốc</p>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-100 p-3.5">
+              <p class="text-xs text-gray-400 mb-0.5">Sau khoá học</p>
+              <p class="text-sm font-semibold text-gray-800">Có thể hành nghề, hoặc chỉ dùng kiến thức cho bản thân</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ + PRODUCTS ── -->
+  <section class="py-8 px-5 md:px-8 bg-white border-t border-gray-100">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- FAQ -->
+        <div>
+          <h2 class="text-base font-bold text-gray-900 mb-5">Câu hỏi thường gặp</h2>
+          <div class="space-y-2">
+
+            <div class="border border-gray-200 rounded-2xl overflow-hidden">
+              <button class="faq-btn w-full text-left px-4 py-3.5 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                <span class="text-sm font-semibold text-gray-800 pr-4">Bảo hiểm Manulife có những sản phẩm nào?</span>
+                <svg class="faq-icon w-4 h-4 text-gray-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
-              <div class="faq-content px-5 pb-5 text-base text-gray-600 leading-relaxed">
-                Manulife cung cấp nhiều dòng sản phẩm đa dạng bao gồm bảo hiểm nhân thọ, bảo hiểm sức khỏe, bảo hiểm bệnh hiểm nghèo, bảo hiểm tai nạn, và các giải pháp tích lũy – đầu tư hưu trí. Mỗi sản phẩm được thiết kế phù hợp cho từng giai đoạn và nhu cầu trong cuộc sống.
+              <div class="faq-content px-4 pb-4 text-sm text-gray-600 leading-relaxed">
+                Manulife cung cấp nhiều dòng sản phẩm đa dạng bao gồm bảo hiểm nhân thọ, sức khỏe, bệnh hiểm nghèo, tai nạn, và các giải pháp tích lũy – đầu tư hưu trí. Mỗi sản phẩm được thiết kế phù hợp cho từng giai đoạn và nhu cầu trong cuộc sống.
               </div>
             </div>
 
-            <!-- FAQ 2 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden">
-              <button class="faq-btn w-full text-left px-5 py-4 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
-                <span class="text-base font-medium text-gray-800 pr-4">Quyền lợi bảo hiểm được chi trả như thế nào?</span>
-                <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="border border-gray-200 rounded-2xl overflow-hidden">
+              <button class="faq-btn w-full text-left px-4 py-3.5 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                <span class="text-sm font-semibold text-gray-800 pr-4">Quyền lợi bảo hiểm được chi trả như thế nào?</span>
+                <svg class="faq-icon w-4 h-4 text-gray-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
-              <div class="faq-content px-5 pb-5 text-base text-gray-600 leading-relaxed">
-                Quyền lợi bảo hiểm được chi trả trực tiếp vào tài khoản ngân hàng của khách hàng sau khi hồ sơ yêu cầu được duyệt. Manulife cam kết quy trình minh bạch, nhanh chóng và hỗ trợ khách hàng từ A đến Z trong quá trình làm thủ tục.
+              <div class="faq-content px-4 pb-4 text-sm text-gray-600 leading-relaxed">
+                Quyền lợi được chi trả trực tiếp vào tài khoản ngân hàng sau khi hồ sơ được duyệt. Manulife cam kết quy trình minh bạch, nhanh chóng và hỗ trợ khách hàng từ A đến Z.
               </div>
             </div>
 
-            <!-- FAQ 3 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden">
-              <button class="faq-btn w-full text-left px-5 py-4 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
-                <span class="text-base font-medium text-gray-800 pr-4">Tôi có thể đóng phí bảo hiểm bằng cách nào?</span>
-                <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="border border-gray-200 rounded-2xl overflow-hidden">
+              <button class="faq-btn w-full text-left px-4 py-3.5 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                <span class="text-sm font-semibold text-gray-800 pr-4">Tôi có thể đóng phí bảo hiểm bằng cách nào?</span>
+                <svg class="faq-icon w-4 h-4 text-gray-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
-              <div class="faq-content px-5 pb-5 text-base text-gray-600 leading-relaxed">
-                Bạn có thể đóng phí qua nhiều hình thức: chuyển khoản ngân hàng, ví điện tử (Momo, ZaloPay), thanh toán tại văn phòng Manulife, hoặc đăng ký trích nợ tự động từ tài khoản ngân hàng. Tư vấn viên sẽ hướng dẫn bạn phương thức phù hợp nhất.
+              <div class="faq-content px-4 pb-4 text-sm text-gray-600 leading-relaxed">
+                Bạn có thể đóng phí qua chuyển khoản ngân hàng, ví điện tử (Momo, ZaloPay), tại văn phòng Manulife, hoặc đăng ký trích nợ tự động từ tài khoản ngân hàng.
               </div>
             </div>
 
-            <!-- FAQ 4 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden">
-              <button class="faq-btn w-full text-left px-5 py-4 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
-                <span class="text-base font-medium text-gray-800 pr-4">Nếu tôi cần hỗ trợ, liên hệ ở đâu?</span>
-                <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="border border-gray-200 rounded-2xl overflow-hidden">
+              <button class="faq-btn w-full text-left px-4 py-3.5 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                <span class="text-sm font-semibold text-gray-800 pr-4">Nếu tôi cần hỗ trợ, liên hệ ở đâu?</span>
+                <svg class="faq-icon w-4 h-4 text-gray-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
-              <div class="faq-content px-5 pb-5 text-base text-gray-600 leading-relaxed">
-                Bạn có thể liên hệ văn phòng Manulife Quy Nhơn tại địa chỉ 19 Phạm Tu, Quy Nhơn Đông, Gia Lai – Hotline: 08-3343-1179 hoặc nhắn tin qua Zalo. Đội ngũ tư vấn viên luôn sẵn sàng hỗ trợ bạn từ thứ Hai đến thứ Bảy.
+              <div class="faq-content px-4 pb-4 text-sm text-gray-600 leading-relaxed">
+                Văn phòng Manulife Quy Nhơn tại 19 Phạm Tu, Quy Nhơn Đông, Gia Lai – Hotline: 08-3343-1179 hoặc Zalo. Hỗ trợ từ thứ Hai đến thứ Bảy.
               </div>
             </div>
 
-            <!-- FAQ 5 -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden">
-              <button class="faq-btn w-full text-left px-5 py-4 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
-                <span class="text-base font-medium text-gray-800 pr-4">Tham gia bảo hiểm có cần khám sức khỏe không?</span>
-                <svg class="faq-icon w-5 h-5 text-gray-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="border border-gray-200 rounded-2xl overflow-hidden">
+              <button class="faq-btn w-full text-left px-4 py-3.5 flex justify-between items-center hover:bg-gray-50 transition-colors" onclick="toggleFAQ(this)">
+                <span class="text-sm font-semibold text-gray-800 pr-4">Tham gia bảo hiểm có cần khám sức khỏe không?</span>
+                <svg class="faq-icon w-4 h-4 text-gray-400 flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                 </svg>
               </button>
-              <div class="faq-content px-5 pb-5 text-base text-gray-600 leading-relaxed">
-                Đa số sản phẩm bảo hiểm Manulife không yêu cầu khám sức khỏe bắt buộc, chỉ cần khai báo sức khỏe trung thực trong hồ sơ. Một số sản phẩm với số tiền bảo hiểm cao có thể yêu cầu khám bổ sung – tư vấn viên sẽ hướng dẫn cụ thể theo từng trường hợp.
+              <div class="faq-content px-4 pb-4 text-sm text-gray-600 leading-relaxed">
+                Đa số sản phẩm không yêu cầu khám sức khỏe bắt buộc, chỉ cần khai báo trung thực. Sản phẩm với số tiền cao có thể yêu cầu khám bổ sung.
               </div>
             </div>
 
           </div>
         </div>
 
-        <!-- Right: Insurance Products -->
+        <!-- Products -->
         <div>
-          <h2 class="text-2xl font-bold text-gray-800 mb-8">Các giải pháp nổi bật từ Manulife</h2>
+          <h2 class="text-base font-bold text-gray-900 mb-5">Các giải pháp nổi bật từ Manulife</h2>
+          <div class="grid grid-cols-2 gap-3">
 
-          <div class="grid grid-cols-2 gap-4">
-
-            <!-- Product 1: Life Insurance -->
-            <div class="bg-gray-50 rounded-2xl p-5 hover:shadow-md transition-shadow cursor-pointer border border-transparent hover:border-primary/20">
-              <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 hover:shadow-md hover:border-primary/20 transition-all cursor-pointer">
+              <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-3">
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                 </svg>
               </div>
-              <h3 class="text-base font-bold text-gray-800 mb-2">Bảo hiểm nhân thọ</h3>
-              <p class="text-sm text-gray-500 leading-relaxed">Bảo vệ người thân trước những rủi ro không lường trước.</p>
+              <h3 class="text-sm font-bold text-gray-800 mb-1">Bảo hiểm nhân thọ</h3>
+              <p class="text-xs text-gray-500 leading-relaxed">Bảo vệ người thân trước những rủi ro không lường trước.</p>
             </div>
 
-            <!-- Product 2: Health Insurance -->
-            <div class="bg-gray-50 rounded-2xl p-5 hover:shadow-md transition-shadow cursor-pointer border border-transparent hover:border-primary/20">
-              <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 hover:shadow-md hover:border-primary/20 transition-all cursor-pointer">
+              <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-3">
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                 </svg>
               </div>
-              <h3 class="text-base font-bold text-gray-800 mb-2">Bảo hiểm sức khỏe</h3>
-              <p class="text-sm text-gray-500 leading-relaxed">Chăm sóc sức khỏe toàn diện cho bản thân và gia đình.</p>
+              <h3 class="text-sm font-bold text-gray-800 mb-1">Bảo hiểm sức khỏe</h3>
+              <p class="text-xs text-gray-500 leading-relaxed">Chăm sóc sức khỏe toàn diện cho bản thân và gia đình.</p>
             </div>
 
-            <!-- Product 3: Critical Illness -->
-            <div class="bg-gray-50 rounded-2xl p-5 hover:shadow-md transition-shadow cursor-pointer border border-transparent hover:border-primary/20">
-              <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 hover:shadow-md hover:border-primary/20 transition-all cursor-pointer">
+              <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-3">
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                 </svg>
               </div>
-              <h3 class="text-base font-bold text-gray-800 mb-2">Bảo hiểm bệnh hiểm nghèo</h3>
-              <p class="text-sm text-gray-500 leading-relaxed">Hỗ trợ tài chính khi chẳng may mắc bệnh hiểm nghèo.</p>
+              <h3 class="text-sm font-bold text-gray-800 mb-1">Bảo hiểm bệnh hiểm nghèo</h3>
+              <p class="text-xs text-gray-500 leading-relaxed">Hỗ trợ tài chính khi chẳng may mắc bệnh hiểm nghèo.</p>
             </div>
 
-            <!-- Product 4: Retirement -->
-            <div class="bg-gray-50 rounded-2xl p-5 hover:shadow-md transition-shadow cursor-pointer border border-transparent hover:border-primary/20">
-              <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4">
-                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 hover:shadow-md hover:border-primary/20 transition-all cursor-pointer">
+              <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center mb-3">
+                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </div>
-              <h3 class="text-base font-bold text-gray-800 mb-2">Bảo hiểm hưu trí & đầu tư</h3>
-              <p class="text-sm text-gray-500 leading-relaxed">Tích lũy hôm nay, vững vàng cho tương lai.</p>
+              <h3 class="text-sm font-bold text-gray-800 mb-1">Bảo hiểm hưu trí & đầu tư</h3>
+              <p class="text-xs text-gray-500 leading-relaxed">Tích lũy hôm nay, vững vàng cho tương lai.</p>
             </div>
 
           </div>
@@ -746,25 +643,22 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════
-       FOOTER CTA BANNER
-  ═══════════════════════════════════════════════ -->
-  <section class="bg-primary py-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+  <!-- ── FOOTER CTA ── -->
+  <section class="bg-primary py-8 px-5 md:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-5">
         <div class="flex items-center gap-4">
-          <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center flex-shrink-0">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="w-11 h-11 bg-white/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
             </svg>
           </div>
-          <p class="text-white font-semibold text-base sm:text-lg leading-snug">
-            Manulife – Đồng hành cùng bạn trên hành trình<br class="hidden sm:block">
-            bảo vệ và kiến tạo tương lai.
+          <p class="text-white font-semibold text-sm leading-snug">
+            Manulife – Đồng hành cùng bạn trên hành trình bảo vệ và kiến tạo tương lai.
           </p>
         </div>
         <a href="tel:0833431179"
-           class="flex items-center gap-2 bg-white text-primary font-bold px-7 py-3 rounded-full hover:bg-gray-50 transition-colors shadow-lg flex-shrink-0 text-sm">
+           class="flex items-center gap-2 bg-white text-primary font-bold px-7 py-3.5 rounded-2xl text-sm tracking-widest uppercase hover:bg-gray-50 transition-all active:scale-95 shadow-lg flex-shrink-0">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
             <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
           </svg>
@@ -774,25 +668,23 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════════ -->
-  <footer class="bg-white border-t border-gray-200 py-5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
-        <span class="font-medium text-gray-700">Văn phòng tổng đại lý Manulife Quy Nhơn</span>
+  <!-- ── FOOTER ── -->
+  <footer class="bg-white border-t border-gray-100 py-5 px-5 md:px-8">
+    <div class="max-w-5xl mx-auto">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-400">
+        <span class="font-semibold text-gray-600">Văn phòng tổng đại lý Manulife Quy Nhơn</span>
         <div class="flex flex-wrap items-center gap-3 sm:gap-5">
           <span class="flex items-center gap-1.5">
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
             </svg>
-            Địa chỉ: 19 Phạm Tu, Quy Nhơn Đông, Gia Lai
+            19 Phạm Tu, Quy Nhơn Đông, Gia Lai
           </span>
           <span class="flex items-center gap-1.5">
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
               <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
             </svg>
-            Hotline: 08-3343-1179
+            08-3343-1179
           </span>
           <span>© 2024 Manulife Quy Nhơn. All rights reserved.</span>
         </div>
@@ -800,27 +692,16 @@
     </div>
   </footer>
 
-  <!-- ═══════════════════════════════════════════════
-       JAVASCRIPT
-  ═══════════════════════════════════════════════ -->
   <script>
-    // Gallery scroll
     function scrollGallery(dir) {
-      const gallery = document.getElementById('gallery');
-      gallery.scrollBy({ left: dir * 300, behavior: 'smooth' });
+      document.getElementById('gallery').scrollBy({ left: dir * 260, behavior: 'smooth' });
     }
-
-    // FAQ accordion
     function toggleFAQ(btn) {
       const content = btn.nextElementSibling;
       const icon = btn.querySelector('.faq-icon');
       const isOpen = content.classList.contains('open');
-
-      // Close all
       document.querySelectorAll('.faq-content').forEach(c => c.classList.remove('open'));
       document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
-
-      // Open clicked if was closed
       if (!isOpen) {
         content.classList.add('open');
         icon.style.transform = 'rotate(180deg)';
